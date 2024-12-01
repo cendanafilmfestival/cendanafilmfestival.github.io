@@ -1,0 +1,29 @@
+.slide-169-1-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+}
+.vector-icon {
+    position: absolute;
+    height: 30.63%;
+    width: 78.18%;
+    top: 3.95%;
+    right: 10.94%;
+    bottom: 65.42%;
+    left: 10.89%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    mix-blend-mode: normal;
+}
+.slide-169-1 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 2500px;
+    overflow: hidden;
+}
+
