@@ -95,7 +95,7 @@ body {
 .landing img {
   width: 70%; /* Adjust the logo size */
   height: auto; /* Maintains aspect ratio */
-  margin-bottom: 4rem; /* Adds spacing below the logo */
+  margin: 4rem; /* Adds spacing below the logo */
 }
 
 .landing h1 {
