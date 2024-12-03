@@ -1,0 +1,142 @@
+.slide-169-1-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+}
+.vector-icon {
+    position: relative;
+
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    mix-blend-mode: normal;
+    background-color: #333;
+}
+.slide-169-1 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 1000px;
+    overflow: hidden;
+}
+
+
+/* topbar */
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .content {
+    height: 200vh; /* Makes the page tall to enable scrolling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #333;
+    color: #FAF9F6;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+    justify-content: space-between; /* Separates logo and links */
+    align-items: center; /* Vertically centers items */
+    z-index: 1000; /* Ensures navbar is always on top */
+  }
+  .navbar img{
+    height: 6vh;
+    padding: 1rem;
+  }
+
+  .navbar a {
+    background-color:#FAF9F6;
+    color:#333333;
+    text-decoration: none;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1.75rem;
+    overflow: hidden;
+  }
+  
+  .navbar a:hover {
+    background-color: #2d2d2d;
+    color:#FAF9F6
+
+  }
+  
+  /*2nd test*/
+
+
+/* Landing Page Styling */
+.landing {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+  color: #FAF9F6;
+  text-align: center;
+}
+.landing img {
+  width: 70%; /* Adjust the logo size */
+  height: auto; /* Maintains aspect ratio */
+  margin-bottom: 4rem; /* Adds spacing below the logo */
+}
+
+.landing h1 {
+  font-size: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.landing p {
+  font-size: 1.5rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.scroll-down {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #FAF9F6;
+  text-decoration: none;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Main Content Styling */
+.content {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.content h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+
