@@ -1,3 +1,22 @@
+/* Global Scrollbar Styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Enables scrolling globally */
+}
+
+html::-webkit-scrollbar {
+  width: 16px !important;
+  height: 16px !important;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #FAF9F6 !important;
+  border-radius: 0 !important;
+}
+html::-webkit-scrollbar-track {
+  background-color: #333333 !important;
+}
+
 .slide-169-1-child {
     position: absolute;
     top: 0px;
@@ -99,9 +118,12 @@ body {
 }
 
 .landing h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
+  display: flex;
+  justify-content: space-between; /* Separates logo and links */
+  align-items: center;
 }
 
 .landing p {
@@ -110,9 +132,39 @@ body {
   margin-right: 8rem;
 }
 
+
+.landing-buttons{
+  justify-content: space-around;
+  display: flexbox;
+  text-decoration: none;
+  outline: none;
+
+}
+
+.landing-buttons button {
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  outline: none;
+  border: 0;
+  background-color:#FAF9F6;
+  color:#333333;
+  text-decoration: none;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  font-size: 3rem;
+  overflow: visible;
+}
+
+.landing-buttons button:hover{
+  transition:linear 100ms;
+  background-color: #333333;
+  color:#FAF9F6;
+}
+
 .scroll-down {
-  margin-top: 20px;
-  font-size: 2rem;
+  margin-top: 2rem;
+  font-size: 6rem;
   color: #FAF9F6;
   text-decoration: none;
   animation: bounce 1.5s infinite;
