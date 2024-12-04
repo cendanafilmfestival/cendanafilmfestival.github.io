@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('Helvetica.ttc') format('tcc');
+}
+
 /* Global Scrollbar Styling */
 html, body {
   margin: 0;
@@ -85,9 +90,9 @@ body {
     background-color:#FAF9F6;
     color:#333333;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.75rem;
     margin-right: 1rem;
-    font-size: 1.75rem;
+    font-size: 2rem;
     overflow: hidden;
   }
   
