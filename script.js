@@ -1,15 +1,26 @@
-const navbar = document.getElementById("navbar");
-const showNavOnScroll = 800; // Change to the scroll point where you want the navbar to appear
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Document is ready");
+    const navbar = document.querySelector(".navbar");
+    const showNavOnScroll = 500;
+  
+    // Get the scroll container
+    const scrollContainer = document.querySelector("body");
+  
+    // Listen to scroll events on the scroll container
+    scrollContainer.addEventListener("scroll", () => {
+      const scrollPosition = scrollContainer.scrollTop;
+      console.log("Scroll position: ", scrollPosition);  // Check the scroll position
+  
+      if (scrollPosition > showNavOnScroll) {
+        navbar.style.transform = "translateY(0)";  // Show the navbar
+      } else {
+        navbar.style.transform = "translateY(-100%)";  // Hide the navbar
+      }
+    });
+  });
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > showNavOnScroll) {
-    navbar.style.transform = "translateY(0)";
-  } else {
-    navbar.style.transform = "translateY(-100%)";
-  }
-});
 
-// Smooth scrolling
+// Click to scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -18,5 +29,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         behavior: 'smooth'
       });
     });
-  });
-  
+});
+
+console.log("JavaScript is running");  // Check if the script is executed

@@ -11,15 +11,15 @@ html, body {
   overflow: auto; /* Enables scrolling globally */
 }
 
-html::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 16px !important;
   height: 16px !important;
 }
-html::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background-color: #FAF9F6 !important;
   border-radius: 0 !important;
 }
-html::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background-color: #333333 !important;
 }
 
@@ -55,17 +55,32 @@ body {
     margin: 0;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-  }
-  
-  .content {
-    height: 200vh; /* Makes the page tall to enable scrolling */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-  }
+    scroll-snap-type: y mandatory; /* Enable vertical snap */
+    scroll-behavior: smooth; /* Smooth scrolling for soft snap */
+    height: 100vh; /* Viewport height */
 
+    overflow-y: scroll; /* Enable vertical scrolling */
+  }
   
+.content {
+  height: 100vh; /* Makes the page tall to enable scrolling */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  scroll-snap-align: start;
+}
+
+.content:nth-child(odd) {
+  background-color: #333333; /* Different color for even sections */
+  color:#FAF9F6;
+}
+
+.content:nth-child(even) {
+  background-color: #FAF9F6; /* Different color for even sections */
+  color:#333333;
+}
+
   .navbar {
     position: fixed;
     top: 0;
@@ -82,6 +97,11 @@ body {
     align-items: center; /* Vertically centers items */
     z-index: 1000; /* Ensures navbar is always on top */
   }
+
+  .navbar.visible {
+    display: block; /* Show navbar */
+  }
+
   .navbar img{
     height: 6vh;
     padding: 1rem;
@@ -107,23 +127,37 @@ body {
 
 
 /* Landing Page Styling */
-.landing {
+
+  
+#landing {
   height: 100vh; /* Full viewport height */
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  grid-template-rows:10fr 1fr; 
+  grid-gap: 1rem;
   justify-content: center;
   align-items: center;
   background: #333333;
   color: #FAF9F6;
-  text-align: center;
-}
-.landing img {
-  width: 70%; /* Adjust the logo size */
-  height: auto; /* Maintains aspect ratio */
-  margin: 4rem; /* Adds spacing below the logo */
+  text-align: left;
+  scroll-snap-align: start;
 }
 
-.landing h1 {
+
+
+#landing #number-icon {
+  width: 70%; /* Adjust the logo size */
+  height: auto; /* Maintains aspect ratio */
+  margin: 2rem; /* Adds spacing below the logo */
+}
+
+#landing #vector-icon{
+  width: 100%; /* Adjust the logo size */
+  height: auto; /* Maintains aspect ratio */
+  margin: 0rem; /* Adds spacing below the logo */
+}
+
+#landing h1 {
   font-size: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -132,22 +166,22 @@ body {
   align-items: center;
 }
 
-.landing p {
+#landing p {
   font-size: 1.5rem;
   margin-left: 8rem;
   margin-right: 8rem;
 }
 
 
-.landing-buttons{
-  justify-content: space-around;
+#landing-buttons{
+
   display: flexbox;
   text-decoration: none;
   outline: none;
 
 }
 
-.landing-buttons button {
+#landing-buttons button {
   cursor: pointer;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -156,13 +190,13 @@ body {
   background-color:#FAF9F6;
   color:#333333;
   text-decoration: none;
-  padding: 0.75rem;
-  margin: 0.5rem;
-  font-size: 3rem;
+  padding: 1rem;
+  margin: 0.75rem;
+  font-size: 5rem;
   overflow: visible;
 }
 
-.landing-buttons button:hover{
+#landing-buttons button:hover{
   transition:linear 100ms;
   background-color: #333333;
   color:#FAF9F6;
@@ -174,6 +208,114 @@ body {
   color: #FAF9F6;
   text-decoration: none;
   animation: bounce 1.5s infinite;
+  grid-column: span 3;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (max-width: 1500px){
+  #landing-buttons button {
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    outline: none;
+    border: 0;
+    background-color:#FAF9F6;
+    color:#333333;
+    text-decoration: none;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    font-size: 3rem;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 1000px) {
+  #landing{
+    grid-template-columns: 3fr  1fr; 
+    grid-template-rows: 1fr 2fr;
+    overflow: hidden;
+  }
+
+  #landing #number-icon {
+    width: 70%; /* Adjust the logo size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 2rem; /* Adds spacing below the logo */
+  }
+  
+  #landing #vector-icon{
+    width: 100%; /* Adjust the logo size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0rem; /* Adds spacing below the logo */
+  }
+  
+  #landing-buttons button {
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    outline: none;
+    border: 0;
+    background-color:#FAF9F6;
+    color:#333333;
+    text-decoration: none;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    font-size: 3rem;
+    overflow: visible;
+  }
+
+  .scroll-down {
+    margin-top: 2rem;
+    font-size: 5rem;
+    color: #FAF9F6;
+    text-decoration: none;
+    animation: bounce 1.5s infinite;
+    grid-column: span 1;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #FAF9F6 !important;
+    border-radius: 0 !important;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: #333333 !important;
+  }
+  .navbar a {
+    background-color:#FAF9F6;
+    color:#333333;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+}
+@media (max-width: 450px){
+  #landing-buttons button {
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    outline: none;
+    border: 0;
+    background-color:#FAF9F6;
+    color:#333333;
+    text-decoration: none;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    font-size: 2.3rem;
+    overflow: visible;
+  }
+
+  .navbar a {
+    padding: 0.3rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    padding-left: 0.7rem;
+  }
 }
 
 @keyframes bounce {
