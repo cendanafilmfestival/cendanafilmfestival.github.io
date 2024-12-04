@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Helvetica';
-  src: url('Helvetica.ttc') format('tcc');
+  src: url('helvetica-255-webfont/Helvetica.woff') format('woff');
+  src: url('helvetica-255-webfont/Helvetica-Bold.woff') format('woff');
 }
 
 /* Global Scrollbar Styling */
