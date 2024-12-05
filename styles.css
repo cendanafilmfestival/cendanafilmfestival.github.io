@@ -213,6 +213,47 @@ body {
   justify-self: center;
 }
 
+
+.grid3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  gap: 3rem;
+  padding:8rem;
+  align-items: center;
+  height: 70%;
+}
+
+#content-header{
+  grid-column: span 3;
+  text-align: center;
+  font-size: 7rem;
+}
+
+.timeline{
+  font-size: 3rem;
+}
+
+.timeline x{
+  color:#c1babd
+}
+
+.timeline v{
+  color:#333333;
+  background-color: #FAF9F6;
+}
+
+#content3-content{
+  grid-column: span 2;
+}
+
+#tema{
+  font-size: 5rem;
+  background-color: #333333;
+  color: #FAF9F6;
+  padding:1rem;
+}
+
 @media (max-width: 1500px){
   #landing-buttons button {
     cursor: pointer;
