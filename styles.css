@@ -368,8 +368,20 @@ body {
 #logo{
   justify-content: center;
   justify-self: center;
-
 }
+
+/* Main Content Styling */
+.content {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.content h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
 
 @media (max-width: 1500px){
   body::-webkit-scrollbar {
@@ -477,16 +489,3 @@ body {
     transform: translateY(-10px);
   }
 }
-
-/* Main Content Styling */
-.content {
-  padding: 20px;
-  background: #f9f9f9;
-}
-
-.content h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 0;
-}
-
