@@ -318,10 +318,6 @@ body {
   font-size:1.75rem;
 }
 
-#daftar{
-
-}
-
 #daftar-grid{
   display:grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -343,10 +339,6 @@ body {
  text-align: left;
  gap:1rem;
  margin: 1rem;
-}
-
-#daftar .content-header{
-  margin-top: 
 }
 
 #daftar .landing-buttons{
