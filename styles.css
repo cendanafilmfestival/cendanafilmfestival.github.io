@@ -238,6 +238,7 @@ body {
 
 .timeline{
   font-size: 3rem;
+  margin-left: 20%;
 }
 
 .timeline x{
@@ -249,21 +250,18 @@ body {
   background-color: #FAF9F6;
 }
 
-#content3-content{
-  grid-column: span 2;
-}
 
 #content2-content{
-  grid-column: span 2;
   margin-left: 3rem;
 }
 
 
 
 #tema{
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: #333333;
   color: #FAF9F6;
+  margin-left: 10%;
   padding:2rem;
 }
 
@@ -272,7 +270,6 @@ body {
   grid-template-columns: 1fr 1fr 4fr;
   grid-template-rows: 1fr 5fr;
   align-items: center;
-  height: 70%;
 }
 
 #content4-content {
@@ -285,15 +282,10 @@ body {
   height: 5rem;
 }
 
-#content-header-4{
-  grid-column: span 3;
-  grid-row: span 1;
-}
 
 .juri{
   grid-column: span 2;
-  grid-row: span 2;
-  margin: 3rem;
+  margin-left: 2rem;
   padding: 2rem;
   background-color: #eae9e6;
 }
@@ -307,15 +299,24 @@ body {
   background-color: #333333;
   color:#FAF9F6;
   margin: 0rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  padding:0.3rem;
 }
 .juri-sub p{
   margin: 0rem;
-  font-size:1.75rem;
+  font-size:1.5rem;
+  padding:0.3rem
 }
 .juri-sub a{
-  margin-top: 10rem;
-  font-size:1.75rem;
+  font-size:1.5rem;
+  text-decoration: none;
+  text-decoration: underline;
+  color:#2d2d2d;
+}
+
+.juri-sub a:hover{
+  color:#FAF9F6;
+  background-color: #333333;
 }
 
 #daftar-grid{
@@ -339,16 +340,16 @@ body {
  text-align: left;
  gap:1rem;
  margin: 1rem;
+ text-decoration: underline;
 }
 
 #daftar .landing-buttons{
   display: grid;
   flex-wrap: none;
-  justify-content: left;
-  text-decoration: none;
+  justify-content: center;
   outline: none;
-  grid-column: span 3;
 }
+
 
 #down-icon {
   height: 5rem;
@@ -360,6 +361,11 @@ body {
 #logo{
   justify-content: center;
   justify-self: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  text-decoration: none;
+  grid-column: span 3;
 }
 
 /* Main Content Styling */
@@ -368,12 +374,50 @@ body {
   background: #f9f9f9;
 }
 
+.text {
+  margin-left: 5%;
+  grid-column: span 2;
+}
+
 .content h2 {
   font-size: 2rem;
   text-align: center;
   margin-top: 0;
 }
 
+#siapa-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 3rem;
+  padding:4rem;
+  align-items: center;
+}
+
+#siapa-content{
+  grid-column: span 3;
+}
+
+.team{
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.individual h1{
+  font-size: 2rem;
+  background-color: #f9f9f9;
+  color:#333333;
+  padding:0.5rem;
+  margin-bottom: 0;
+}
+.individual p{
+  margin:0;
+  padding:0.5rem;
+  font-size: 1.5rem;
+}
 
 @media (max-width: 1500px){
   body::-webkit-scrollbar {
@@ -418,9 +462,23 @@ body {
     margin: 0rem;
     font-size:1.5rem;
   }
-}
-@media (max-width: 700px){
+  .juri-sub a{
+    font-size:1.5rem;
+  }
 
+  .team{
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  #siapa-content{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 810px){
 
   .landing-buttons button {
     cursor: pointer;
@@ -436,6 +494,7 @@ body {
     font-size: 3.5rem;
     overflow: visible;
   }
+
   .content {
     height: 175vh; /* Makes the page tall to enable scrolling */
     display: flex;
@@ -443,6 +502,11 @@ body {
     justify-content: center;
     font-size: 2rem;
     scroll-snap-align: start;
+  }
+
+  .grid3{
+    height: 150vh;
+    padding: 1rem;
   }
 
   #landing{
@@ -455,22 +519,94 @@ body {
     font-size: 1.8rem;
   }
 
+  .juri{
+    grid-column: span 1;
+  }
+
   #daftar{
     height:100vh;
     font-size: 1rem;
   }
 
-  #daftar .landing-buttons{
-    display: grid;
-    flex-wrap: none;
-    text-align: left;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    background-color: #FAF9F6;
-    outline: none;
-    grid-column: span 3;
+  #daftar .landing-buttons button{
+    font-size: 2rem;
   }
+
+  #daftar-grid{
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 80vh;
+  }
+
+  #logo{
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    grid-column: span 1;
+  }
+
+  .content p{
+    font-size: 1.5rem;
+  }
+
+  .grid3{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
+  }
+
+  .content-header{
+    font-size: 4rem;
+    grid-column: span 1;
+  }
+
+  .daftar-buttons{
+    grid-column: span 1;
+  }
+
+  .team{
+    grid-column: span 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #siapa-content{
+    grid-column: span 1;
+  }
+
+  #siapa-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 3rem;
+    padding:4rem;
+    align-items: center;
+  }
+  
+  #daftar-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .text{
+    grid-column: span 1;
+  }
+
+  .timeline p{
+    font-size: 3rem;
+  }
+
+  #content4-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 4fr;
+    align-items: center;
+  }
+
+  p{
+    font-size: 0.10rem;
+  }
+
 }
 
 @keyframes bounce {
