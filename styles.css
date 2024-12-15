@@ -376,7 +376,6 @@ body {
 }
 
 .text {
-  margin-left: 5%;
   grid-column: span 2;
 }
 
@@ -530,7 +529,10 @@ body {
   }
 
   #daftar .landing-buttons button{
-    font-size: 2rem;
+    font-size: 1.7rem;
+    padding:0;
+    margin:0;
+    margin-block: 2rem;
   }
 
   #daftar-grid{
@@ -547,7 +549,7 @@ body {
   }
 
   .content p{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .grid3{
@@ -556,7 +558,7 @@ body {
   }
 
   .content-header{
-    font-size: 4rem;
+    font-size: 3rem;
     grid-column: span 1;
   }
 
@@ -573,6 +575,7 @@ body {
 
   #siapa-content{
     grid-column: span 1;
+    margin: 0;
   }
 
   #siapa-grid{
@@ -591,10 +594,11 @@ body {
 
   .text{
     grid-column: span 1;
+    font-size: 0.1rem;
   }
 
   .timeline p{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   #content4-grid{
@@ -606,6 +610,52 @@ body {
 
   p{
     font-size: 0.10rem;
+  }
+
+  #siapa-grid{
+    padding: 1rem;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #333;
+    color: #FAF9F6;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+    justify-content: space-between; /* Separates logo and links */
+    align-items: center; /* Vertically centers items */
+    z-index: 100; /* Ensures navbar is always on top */
+  }
+
+  .navbar.visible {
+    display: block; /* Show navbar */
+  }
+
+  .navbar img{
+    height: 4vh;
+    padding: 1rem;
+  }
+
+  .navbar a {
+    background-color:#FAF9F6;
+    color:#333333;
+    text-decoration: none;
+    padding: 0.75rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .navbar a:hover {
+    background-color: #2d2d2d;
+    color:#FAF9F6
+
   }
 
 }
