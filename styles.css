@@ -225,7 +225,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 5fr;
   gap: 3rem;
-  padding:4rem;
+  padding:3%;
   align-items: center;
   height: 70%;
 }
@@ -255,14 +255,17 @@ body {
   margin-left: 3rem;
 }
 
-
+#content2-grid{
+  grid-template-columns: 1.5fr 2fr 2fr;
+}
 
 #tema{
   font-size: 3rem;
   background-color: #333333;
   color: #FAF9F6;
-  margin-left: 10%;
+
   padding:2rem;
+  margin:1rem;
 }
 
 #content4-grid{
@@ -478,7 +481,7 @@ body {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 810px){
+@media (max-width: 1200px){
 
   .landing-buttons button {
     cursor: pointer;
@@ -549,7 +552,7 @@ body {
   }
 
   .content p{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .grid3{
@@ -658,6 +661,19 @@ body {
 
   }
 
+  #content2-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px){
+  .content p{
+    font-size: 1.1rem;
+  }
+
+  .timeline p{
+    font-size: 2rem;
+  }
 }
 
 @keyframes bounce {
