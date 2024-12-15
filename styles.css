@@ -23,6 +23,16 @@ body::-webkit-scrollbar-track {
   background-color: #333333 !important;
 }
 
+p{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
 .slide-169-1-child {
     position: absolute;
     top: 0px;
@@ -311,7 +321,6 @@ body {
   padding:0.3rem
 }
 .juri-sub a{
-  font-size:1.5rem;
   text-decoration: none;
   text-decoration: underline;
   color:#2d2d2d;
@@ -459,14 +468,11 @@ body {
     background-color: #333333;
     color:#FAF9F6;
     margin: 0rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .juri-sub p{
     margin: 0rem;
-    font-size:1.5rem;
-  }
-  .juri-sub a{
-    font-size:1.5rem;
+    font-size:1.2rem;
   }
 
   .team{
@@ -499,7 +505,7 @@ body {
   }
 
   .content {
-    height: 175vh; /* Makes the page tall to enable scrolling */
+    height: 150vh; /* Makes the page tall to enable scrolling */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,6 +530,11 @@ body {
 
   .juri{
     grid-column: span 1;
+    margin:0;
+  }
+
+  .juri-sub h1{
+    font-size: 1.5rem;
   }
 
   #daftar{
@@ -533,7 +544,6 @@ body {
 
   #daftar .landing-buttons button{
     font-size: 1.7rem;
-    padding:0;
     margin:0;
     margin-block: 2rem;
   }
@@ -664,6 +674,11 @@ body {
   #content2-grid{
     grid-template-columns: 1fr;
   }
+
+  #content2-content{
+    margin:1%;
+    max-height: 100%;
+  }
 }
 
 @media (max-width: 500px){
@@ -673,6 +688,23 @@ body {
 
   .timeline p{
     font-size: 2rem;
+  }
+
+  #landing .landing-buttons button{
+    font-size: 2.5rem;
+  }
+
+  #content2-content{
+    margin:1rem;
+    max-height: 100%;
+  }
+
+  #tema{
+    margin: 0;
+  }
+
+  .individual h1{
+    font-size: 1.5rem;
   }
 }
 
