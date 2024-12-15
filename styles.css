@@ -23,15 +23,6 @@ body::-webkit-scrollbar-track {
   background-color: #333333 !important;
 }
 
-p{
-  margin: 0;
-  padding: 0;
-}
-
-h1{
-  margin: 0;
-  padding: 0;
-}
 
 .slide-169-1-child {
     position: absolute;
@@ -705,6 +696,10 @@ body {
 
   .individual h1{
     font-size: 1.5rem;
+  }
+
+  .grid3{
+    max-height: 88%;
   }
 }
 
