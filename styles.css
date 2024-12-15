@@ -505,7 +505,7 @@ body {
   }
 
   .grid3{
-    height: 150vh;
+    height: 88%;
     padding: 1rem;
   }
 
@@ -602,7 +602,7 @@ body {
   }
 
   .timeline p{
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   #content4-grid{
@@ -700,6 +700,19 @@ body {
 
   .grid3{
     max-height: 88%;
+  }
+
+  .timeline p{
+    font-size: 3rem;
+    margin:0;
+    padding:0;
+  }
+
+  .timeline{
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
   }
 }
 
