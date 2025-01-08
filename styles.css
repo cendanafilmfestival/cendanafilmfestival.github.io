@@ -23,6 +23,9 @@ body::-webkit-scrollbar-track {
   background-color: #333333 !important;
 }
 
+#landing{
+  max-height: 100vh;
+}
 
 .slide-169-1-child {
     position: absolute;
@@ -64,7 +67,7 @@ body {
   }
   
 .content {
-  height: 100vh; /* Makes the page tall to enable scrolling */
+  height: 120vh; /* Makes the page tall to enable scrolling */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -496,7 +499,7 @@ body {
   }
 
   .content {
-    height: 150vh; /* Makes the page tall to enable scrolling */
+    height: 170vh; /* Makes the page tall to enable scrolling */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -608,7 +611,7 @@ body {
   #content4-grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 4fr;
+    grid-template-rows: 1fr 2fr 2fr 3fr;
     align-items: center;
   }
 
@@ -692,6 +695,7 @@ body {
 
   #tema{
     margin: 0;
+    font-size: 1.5rem;
   }
 
   .individual h1{
@@ -703,7 +707,7 @@ body {
   }
 
   .timeline p{
-    font-size: 3rem;
+    font-size: 2rem;
     margin:0;
     padding:0;
   }
@@ -713,6 +717,11 @@ body {
     align-items: center;
     justify-content: center;
     justify-self: center;
+  }
+
+  .navbar a{
+    font-size: 20px;
+    padding: 10px
   }
 }
 
