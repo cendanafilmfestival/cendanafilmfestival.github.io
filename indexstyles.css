@@ -1,5 +1,10 @@
-body {
+@font-face {
+    font-family: 'Helvetica';
+    src: url('helvetica-255-webfont/Helvetica.woff') format('woff');
+    src: url('helvetica-255-webfont/Helvetica-Bold.woff') format('woff');
+  }
 
+body {
     width: auto;
     height: 100vh;
     font-family: Helvetica;
@@ -96,7 +101,17 @@ body {
     width: 40%;
 }
 
+hr {
+    border: none;
+    border-top: white;
+    height: 1px;  /* Ensures a clean, single-line appearance */
+    padding-bottom: 3px;
+    background-color: none; /* Or any color you prefer */
+
+}
+
 a {
+    font-family: Helvetica;
     position: relative;
     text-decoration: none;
     padding: 5px 10px;
@@ -137,11 +152,3 @@ a:hover::before {
     }
 }
 
-hr {
-    border: none;
-    border-top: white;
-    height: 1px;  /* Ensures a clean, single-line appearance */
-    padding-bottom: 3px;
-    background-color: none; /* Or any color you prefer */
-
-}
