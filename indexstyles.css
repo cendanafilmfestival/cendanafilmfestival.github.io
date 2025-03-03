@@ -99,6 +99,7 @@ body {
 a {
     position: relative;
     text-decoration: none;
+    padding: 5px 10px;
     color: white;
     text-decoration: none;
     transition: color 0.1s ease-in-out;
@@ -128,6 +129,12 @@ a:hover {
 
 a:hover::before {
     transform: scaleX(1);
+}
+
+@media(max-width: 500px){
+    a {
+        padding: 0;
+    }
 }
 
 hr {
