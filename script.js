@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Document is ready");
     const navbar = document.querySelector(".navbar");
-    const showNavOnScroll = 500;
+    const showNavOnScroll = 200;
   
     // Get the scroll container
     const scrollContainer = document.querySelector("body");

@@ -16,11 +16,11 @@ body::-webkit-scrollbar {
   height: 16px !important;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #FAF9F6 !important;
+  background-color: #F0EBE5 !important;
   border-radius: 0 !important;
 }
 body::-webkit-scrollbar-track {
-  background-color: #333333 !important;
+  background-color: #826644 !important;
 }
 
 #landing{
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-track {
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: #333;
+    background-color: #826644;
     width: 100%;
     height: 100%;
 }
@@ -41,13 +41,13 @@ body::-webkit-scrollbar-track {
     overflow: hidden;
     max-height: 100%;
     mix-blend-mode: normal;
-    background-color: #333;
+    background-color: #826644;
 }
 
 .slide-169-1 {
     width: 100%;
     position: relative;
-    background-color: #fff;
+    background-color: #F0EBE5;
     height: 1000px;
     overflow: hidden;
 }
@@ -76,13 +76,13 @@ body {
 }
 
 .content:nth-child(odd) {
-  background-color: #333333; /* Different color for even sections */
-  color:#FAF9F6;
+  background-color: #826644; /* Different color for even sections */
+  color:#F0EBE5;
 }
 
 .content:nth-child(even) {
-  background-color: #FAF9F6; /* Different color for even sections */
-  color:#333333;
+  background-color: #F0EBE5; /* Different color for even sections */
+  color:#826644;
 }
 
   .navbar {
@@ -90,8 +90,8 @@ body {
     top: 0;
     width: 100%;
     max-width: 100%;
-    background-color: #333;
-    color: #FAF9F6;
+    background-color: #826644;
+    color: #F0EBE5;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -112,8 +112,8 @@ body {
   }
 
   .navbar a {
-    background-color:#FAF9F6;
-    color:#333333;
+    background-color:#F0EBE5;
+    color:#826644;
     text-decoration: none;
     padding: 0.75rem;
     margin-right: 1rem;
@@ -122,8 +122,8 @@ body {
   }
   
   .navbar a:hover {
-    background-color: #2d2d2d;
-    color:#FAF9F6
+    background-color: #826644;
+    color:#F0EBE5
 
   }
   
@@ -134,8 +134,8 @@ body {
 
   
 #landing {
-  background: #333333;
-  color: #FAF9F6;
+  background: #826644;
+  color: #F0EBE5;
 
   scroll-snap-align: start;
 }
@@ -197,8 +197,8 @@ body {
   font-weight: bold;
   outline: none;
   border: 0;
-  background-color:#FAF9F6;
-  color:#333333;
+  background-color:#F0EBE5;
+  color:#826644;
   text-decoration: none;
   padding: 1rem;
   margin: 0.75rem;
@@ -208,14 +208,14 @@ body {
 
 .landing-buttons button:hover{
   transition:linear 100ms;
-  background-color: #333333;
-  color:#FAF9F6;
+  background-color: #826644;
+  color:#F0EBE5;
 }
 
 .scroll-down {
   margin-top: 2rem;
   font-size: 6rem;
-  color: #FAF9F6;
+  color: #F0EBE5;
   text-decoration: none;
   animation: bounce 1.5s infinite;
   grid-column: span 3;
@@ -245,13 +245,12 @@ body {
   margin-left: 20%;
 }
 
-.timeline x{
-  color:#c1babd
+.timeline .date {
+  color: #c1babd;
 }
-
-.timeline v{
-  color:#333333;
-  background-color: #FAF9F6;
+.timeline .fls2n {
+  color: #826644;
+  background-color: #F0EBE5;
 }
 
 
@@ -265,11 +264,17 @@ body {
 
 #tema{
   font-size: 3rem;
-  background-color: #333333;
-  color: #FAF9F6;
+  background-color: #826644;
+  color: #F0EBE5;
 
   padding:2rem;
   margin:1rem;
+}
+
+#tema .subtema{
+  font-size: 3rem;
+  color: #b09c83;
+  padding:2rem;
 }
 
 #content4-grid{
@@ -294,7 +299,7 @@ body {
   grid-column: span 2;
   margin-left: 2rem;
   padding: 2rem;
-  background-color: #eae9e6;
+  background-color: #e5d0b8;
 }
 
 .juri-sub{
@@ -303,8 +308,8 @@ body {
 }
 
 .juri-sub h1{
-  background-color: #333333;
-  color:#FAF9F6;
+  background-color: #826644;
+  color:#F0EBE5;
   margin: 0rem;
   font-size: 2rem;
   padding:0.3rem;
@@ -317,12 +322,12 @@ body {
 .juri-sub a{
   text-decoration: none;
   text-decoration: underline;
-  color:#2d2d2d;
+  color:#826644;
 }
 
 .juri-sub a:hover{
-  color:#FAF9F6;
-  background-color: #333333;
+  color:#F0EBE5;
+  background-color: #826644;
 }
 
 #daftar-grid{
@@ -361,8 +366,8 @@ body {
 #down-icon {
   height: 5rem;
   mix-blend-mode: normal;
-  fill: #333333;
-  forced-color-adjust: #333;
+  fill: #826644;
+  forced-color-adjust: #826644;
 }
 
 #logo{
@@ -378,7 +383,7 @@ body {
 /* Main Content Styling */
 .content {
   padding: 20px;
-  background: #f9f9f9;
+  background: #F0EBE5;
 }
 
 .text {
@@ -414,8 +419,8 @@ body {
 
 .individual h1{
   font-size: 2rem;
-  background-color: #f9f9f9;
-  color:#333333;
+  background-color: #F0EBE5;
+  color:#826644;
   padding:0.5rem;
   margin-bottom: 0;
 }
@@ -431,11 +436,11 @@ body {
     height: 0 !important;
   }
   body::-webkit-scrollbar-thumb {
-    background-color: #FAF9F6 !important;
+    background-color: #F0EBE5 !important;
     border-radius: 0 !important;
   }
   body::-webkit-scrollbar-track {
-    background-color: #333333 !important;
+    background-color: #826644 !important;
   }
   .navbar a {
     padding: 0.7rem;
@@ -455,12 +460,12 @@ body {
     grid-row: span 2;
     margin: 2rem;
     padding: 1rem;
-    background-color: #eae9e6;
+    background-color: #F0EBE5;
   }
 
   .juri-sub h1{
-    background-color: #333333;
-    color:#FAF9F6;
+    background-color: #826644;
+    color:#F0EBE5;
     margin: 0rem;
     font-size: 1.8rem;
   }
@@ -489,8 +494,8 @@ body {
     font-weight: bold;
     outline: none;
     border: 0;
-    background-color:#FAF9F6;
-    color:#333333;
+    background-color:#F0EBE5;
+    color:#826644;
     text-decoration: none;
     padding: 0.75rem;
     margin: 0.5rem;
@@ -616,7 +621,7 @@ body {
   }
 
   p{
-    font-size: 0.10rem;
+    font-size: 1.2rem;
   }
 
   #siapa-grid{
@@ -628,8 +633,8 @@ body {
     top: 0;
     width: 100%;
     max-width: 100%;
-    background-color: #333;
-    color: #FAF9F6;
+    background-color: #826644;
+    color: #F0EBE5;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -650,18 +655,18 @@ body {
   }
 
   .navbar a {
-    background-color:#FAF9F6;
-    color:#333333;
+    background-color: #F0EBE5;
+    color: #826644;
     text-decoration: none;
-    padding: 0.75rem;
-    margin-right: 1rem;
-    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.2rem; /* Lebih kecil untuk mobile */
     overflow: hidden;
   }
   
   .navbar a:hover {
-    background-color: #2d2d2d;
-    color:#FAF9F6
+    background-color: #826644;
+    color:#F0EBE5
 
   }
 
