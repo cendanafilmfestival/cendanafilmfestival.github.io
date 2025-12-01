@@ -161,6 +161,8 @@ button:hover{
 
   .landing-buttons button {
     margin-block: 1vh;
+    font-size: 10vw;
+
   }
   .credits{
     opacity: 30%;
@@ -168,6 +170,10 @@ button:hover{
     margin-block: 0px;
     padding: 0;
     font-weight: 100;
+  }
+
+  .pemenang{
+    font-size: 8vw;
   }
 }
 
@@ -262,8 +268,13 @@ button:hover{
     padding-block: 3vh;
   }
 
+.mid-section-1{
+  width: 100vw;
+  overflow: hidden;
+}
+
   .map {
-    transform: translateX(19%);
+    transform: translateX(5%);
     width: 140vw;
   }
 }
