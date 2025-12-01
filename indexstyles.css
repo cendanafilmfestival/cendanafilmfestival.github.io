@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('helvetica-255-webfont/Helvetica.woff') format('woff');
+  src: url('helvetica-255-webfont/Helvetica-Bold.woff') format('woff');
+}
+
+body {
+    width: auto;
+    height: 100vh;
+    font-family: Helvetica;
+    overflow: hidden;
+    display: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-vid {
+   position: fixed;
+   width: 100%;
+   z-index: -1;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   z-index: -1;
+  background: url('files\Frame 4.png') no-repeat center center/cover; /* Fallback image */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: fixed;
+    background: linear-gradient(174deg, rgba(255, 255, 255, 0) 70%, black 100%);
+    z-index: 2; 
+}
+
+.cendana-multimedia {
+    width: 95%;
+    filter: saturate(500%) hue-rotate(35deg);
+    max-width: 1920px;
+    margin-inline: auto;
+    mix-blend-mode: difference;
+    margin-bottom: 3rem;
+    opacity: 80%;
+}
+
+.top {
+    padding-block: 20px;
+    padding-inline: 0;
+}
+
+.middle {
+    display: flex;
+    flex-grow: 1;
+}
+
+.bottom {
+    padding: 20px;
+}
+
+.bottom p {
+    margin: auto;
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+    font-weight:normal;
+}
+
+@media (max-width: 850px){
+    .bottom p {
+        margin: auto;
+        display: inline-block;
+        color: white;
+        font-size: 28px;
+        font-weight:normal;
+    }
+}
+
+@media (max-width: 500px){
+    .bottom p {
+        margin: auto;
+        display: inline-block;
+        color: white;
+        font-size: 18px;
+        font-weight:normal;
+    }
+}
+
+.ffc {
+    font-family: Helvetica;
+    text-align: left;
+    width: 60%;
+}
+
+.info {
+    font-family: Helvetica;
+    text-align: right;
+    width: 40%;
+}
+
+hr {
+    border: none;
+    border-top: white;
+    height: 1px;  /* Ensures a clean, single-line appearance */
+    padding-bottom: 3px;
+    background-color: none; /* Or any color you prefer */
+
+}
+
+a {
+    font-family: Helvetica;
+    position: relative;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+}
+
+a:visited{
+    color: white;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000; /* Change to your desired background color */
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+a:hover {
+    color: white; /* Text color change on hover */
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
+
+@media(max-width: 500px){
+    a {
+        padding: 5px;
+    }
+}
+
