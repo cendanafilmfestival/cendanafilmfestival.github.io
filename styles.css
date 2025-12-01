@@ -573,20 +573,21 @@ button:hover{
 
   .content-section-5 {
     width: 90vw;
-    font-size: 3.5vw;
-    margin-inline: 2vw;
+    font-size: 4vw;
+    margin-inline: 1vw;
   }
 
   .staff {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   .bottom-section-5 {
     width: 90vw;
+    align-items: flex-start;
   }
 
   .graphic-section-5 img{
-    width: 20vw;
+    width: 18vw;
   }  
 }
 
