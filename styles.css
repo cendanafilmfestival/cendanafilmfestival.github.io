@@ -268,14 +268,30 @@ button:hover{
     padding-block: 3vh;
   }
 
-.mid-section-1{
-  width: 100vw;
-  overflow: hidden;
-}
+  .mid-section-1{
+    width: 100vw;
+    overflow: hidden;
+  }
 
   .map {
     transform: translateX(5%);
     width: 140vw;
+  }
+
+  .bottom-section-1{
+    font-size: 5vw;
+    width: 85vw;
+    margin-bottom: 2vh;
+  }
+
+
+    .buttons-section-1 {
+    width: 85vw;
+    margin: 0;
+    }
+
+  .buttons-section-1 button{
+    font-size: 6vw;
   }
 }
 
@@ -338,6 +354,33 @@ button:hover{
   margin-right: 0;
 }
 
+@media(max-width: 800px){
+  .text-section-2{
+    font-size: 5vw;
+  }
+
+  .p-1-section-2{
+    width: 90vw;
+    text-align: left;
+    line-height: 1;
+    margin-inline: 5vw;
+    margin-bottom: 20px;
+  }
+
+
+  .p-2-section-2{
+    width: 90vw;
+    display: flex;
+    justify-content: right;
+    line-height: 1;
+    margin-inline: 5vw;
+    margin-top: 20px;
+  }
+
+  .p-2-section-2 p {
+    margin-right: 0;
+  }
+}
 
 /* ------ SECTION 3 -------- */
 
@@ -469,4 +512,12 @@ button:hover{
 
 .staff{
   font-size: 3vw;
+}
+
+/* ------ FOOOOOOOOOOOOOOOOOOOTTTTTTTTT ----- */
+
+footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: rgb(65, 34, 1);
 }
