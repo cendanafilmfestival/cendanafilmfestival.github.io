@@ -606,11 +606,27 @@ button:hover{
 
 /* ------- SECTION 6 ------- */
 
+.section-6{
+  margin-block: 10vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+}
+
+.buttons-section-6{
+  font-size: 5vw;
+  margin-left: 10vw;
+}
+
+.buttons-section-6 a{
+  margin: 5vw;
+}
 
 /* ------ FOOOOOOOOOOOOOOOOOOOTTTTTTTTT ----- */
 
 footer {
   width: 100vw;
-  height: 50vh;
+  height: 30vh;
   background-color: rgb(65, 34, 1);
 }
