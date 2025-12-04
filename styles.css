@@ -331,7 +331,7 @@ button:hover{
   display: flex;
   justify-content: right;
   width: 100vw;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .graphic-section-2 img{
@@ -410,7 +410,7 @@ button:hover{
 
 .graphic-section-3 {
   width: 100vw;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .graphic-section-3 img {
@@ -481,6 +481,10 @@ button:hover{
   display: flex;
   flex-direction: column;
   width: 100vw;
+}
+
+.section-4 .header-section{
+  margin-bottom: 10px;
 }
 
 .content-section-4{
@@ -616,17 +620,54 @@ button:hover{
 
 .buttons-section-6{
   font-size: 5vw;
-  margin-left: 10vw;
+  margin-left: 6vw;
 }
 
-.buttons-section-6 a{
-  margin: 5vw;
+.buttons-section-6 button{
+  font-size: 6.5vw;
+  color: black;
+  border-color: black;
 }
+
+.buttons-section-6 button:hover{
+  color: white;
+  border-color: black;
+  background-color: black;
+}
+
 
 /* ------ FOOOOOOOOOOOOOOOOOOOTTTTTTTTT ----- */
 
 footer {
-  width: 100vw;
-  height: 30vh;
+  width: 90vw;
+  height: auto;
   background-color: rgb(65, 34, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vw;
+}
+
+.footer-ffc img{
+  width: 42vw;
+}
+
+.footer-info img{
+  width: 38vw;
+}
+
+@media(max-width: 700px){
+  footer{
+    flex-direction: column-reverse;
+  }
+  .footer-ffc img{
+    width: 90vw;
+    
+  }
+
+  .footer-info img{
+    width: 90vw;
+    padding-bottom: 40px;
+  }
 }
